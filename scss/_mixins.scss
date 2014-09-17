@@ -1,0 +1,26 @@
+.text-center  { text-align: center; }
+.text-left    { text-align: left; }
+.text-right   { text-align: right; }
+.hide         { display: none; }
+strong        { font-weight: bold; }
+em            { font-style: italic; }
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.small-caps {
+  @extend .caps;
+  @extend small;
+}
+
+::selection {
+  background: $bgdark2;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: $bgdark2;
+  color: #fff;
+}

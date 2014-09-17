@@ -1,0 +1,60 @@
+$sans-serif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial sans-serif;
+
+body {
+  font-family: $sans-serif;
+}
+
+h1    { font-size: 3.998em; }
+h2    { font-size: 1.999em; }
+h3    { font-size: $lead; }
+h4    { font-size: 1em; }
+small { font-size: 0.707em; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-color;
+  font-weight: bold;
+  font-style: italic;
+  line-height: $base-lh;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 $lead;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.meta-text {
+  @extend small;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.big-text {
+  font-size: $em * $base-lh;
+}
+
+label {
+  @extend .meta-text;
+}
